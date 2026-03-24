@@ -2,28 +2,105 @@
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
-    <title>Moj Internet Radio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎙️ Moj Internet Radio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 40px;
-            background: #f0f0f0;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 { color: #333; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .tagline {
+            font-style: italic;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
         .player {
-            margin: 20px auto;
-            width: 100%;
-            max-width: 500px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .player p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+        .schedule {
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .schedule h2 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>🎙️ Dobrodošli na Moj Internet Radio</h1>
-    <div class="player">
-        <!-- Ovdje ćeš kasnije ubaciti embed kod playera -->
-        <p>Player će biti ovdje...</p>
+    <div class="container">
+        <header>
+            <h1>🎙️ Moj Internet Radio</h1>
+            <p class="tagline">Zvuk koji te povezuje — 24/7</p>
+        </header>
+
+        <div class="player">
+            <p>▶️ Player će biti ovdje (nakon što dodas embed kod)</p>
+            <p>Učitavanje...</p>
+        </div>
+
+        <div class="schedule">
+            <h2>📅 Raspored emisija</h2>
+            <p><strong>Ponedjeljak - Petak:</strong> 16:00 - 18:00 - Muzički mix</p>
+            <p><strong>Subota:</strong> 10:00 - 12:00 - Hitovi</p>
+            <p><strong>Nedjelja:</strong> 14:00 - 16:00 - Retro</p>
+        </div>
+
+        <footer>
+            © 2026 Moj Radio Projekt | Napravljeno kao školski projekt
+        </footer>
     </div>
-    <p>© 2026 Moj Radio Projekt</p>
 </body>
 </html>
